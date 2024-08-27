@@ -171,7 +171,7 @@ const Filters = ({
 }
 
 const CoursesPage = () => {
-  const BASE_URL = 'https://3.24.187.24:8080';
+  const BASE_URL = 'https://backend-jet-nine.vercel.app';
   const searchParams = useSearchParams();
   const courseName = searchParams ? searchParams.get('course_name') || '' : '';
   const [courses, setCourses] = useState<Course[]>([]);

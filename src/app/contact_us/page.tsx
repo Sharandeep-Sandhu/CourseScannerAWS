@@ -41,7 +41,7 @@ export default function Component() {
         }
 
         try {
-            const response = await axios.post("https://3.24.187.24:8080/api/contact", formData);
+            const response = await axios.post("https://backend-jet-nine.vercel.app/api/contact", formData);
             setSuccess(response.data.message);
             setFormData({
                 name: "",
